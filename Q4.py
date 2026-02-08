@@ -2,7 +2,6 @@
 #Last_name: str = str(input("Enter Last name: "))
 #First_name: str = str(input("Enter Last name: "))
 #Country: str = str(input("Enter Last name: "))
-#City: str = str(input("Enter Last name: "))
 #Zipcode: str = str(input("Enter Last name: "))
 
 while True:
@@ -26,10 +25,12 @@ while True:
     else:
         print("Please enter a valid Country name (ex. US,IL,RU,GER)")
 
+City = input("Enter city address: ")
+
 while True:
     Zipcode = input("Enter Zipcode: ")
     if Zipcode.isdigit() and len(Zipcode) >= 4:
         break
     else:
         print("Please enter a valid Zipcode (at least 4 numbers)")
-print("Last name: " , Last_name.upper() , "\n" ,"First name: ",First_name.lower(), "\n" ,"country: ",Country, "\n", "zipcode: ", Zipcode)
+print(f"'FOR: {Last_name.upper()} {First_name.lower()} \nCOUNTRY: {Country} \nCITY: {City} \nZIPCODE: {Zipcode}")
